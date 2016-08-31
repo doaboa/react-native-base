@@ -54,5 +54,7 @@
       <string>Octicons.ttf</string>
       <string>Zocial.ttf</string>
     </array>
+    <key>CodePushDeploymentKey</key>
+    <string>fTkqUZV-GIzoHMyF27o0bF92AsIAVyBYb7dcb</string>
   </dict>
 </plist>

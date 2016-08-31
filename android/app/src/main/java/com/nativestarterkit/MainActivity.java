@@ -11,6 +11,12 @@ import java.util.List;
 
 public class MainActivity extends ReactActivity {
 
+    @Override
+    protected String getJSBundleFile() {
+      return CodePush.getJSBundleFile();
+    }
+
+
     /**
      * Returns the name of the main component registered from JavaScript.
      * This is used to schedule rendering of the component.

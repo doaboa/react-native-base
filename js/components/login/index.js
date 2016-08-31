@@ -18,7 +18,7 @@ class Login extends Component {
         super(props);
         this.state = {
             visibleHeight: Dimensions.get('window').height,
-            scroll: false
+            scroll: true
         };
     }
 
@@ -35,17 +35,25 @@ class Login extends Component {
                             <View style={styles.bg}>
                                 <InputGroup style={styles.input}>
                                     <Icon name='ios-person' />
-                                    <Input placeholder='EMAIL' />
+                                    <Input placeholder='USERNAME' />
                                 </InputGroup>
                                 <InputGroup style={styles.input}>
-                                    <Icon name='ios-unlock-outline' />
+                                    <Icon name='ios-ice-cream' />
                                     <Input
-                                        placeholder='PASSWORD'
-                                        secureTextEntry={true}
-                                    />
+                                        placeholder='AGE' />
+                                </InputGroup>
+                                <InputGroup style={styles.input}>
+                                    <Icon name='md-transgender' />
+                                    <Input
+                                        placeholder='GENDER' />
+                                </InputGroup>
+                                <InputGroup style={styles.input}>
+                                    <Icon name='md-locate' />
+                                    <Input
+                                        placeholder='COUNTRY' />
                                 </InputGroup>
                                 <Button style={styles.btn} textStyle={{color: '#fff'}} onPress={() => this.replaceRoute('home')}>
-                                    Login
+                                    Go
                                 </Button>
                             </View>
                         </Image>
